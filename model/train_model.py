@@ -7,8 +7,8 @@ import pickle
 df = pd.read_csv('../data/ev_data.csv')
 
 # Features and target
-X = df.drop('range', axis=1)
-y = df['range']
+X = df.drop(['physics_range', 'ml_range'], axis=1)
+y = df['physics_range']  # Using physics_range as our target variable
 
 # Split data
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
