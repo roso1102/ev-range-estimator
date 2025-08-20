@@ -1,4 +1,4 @@
-# EV Range Estimator 🔋🚗
+# EV Range Estimator 
 
 A machine learning project that predicts the remaining range of an electric vehicle based on sensor inputs.
 
